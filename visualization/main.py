@@ -57,7 +57,7 @@ filtered_df = df[
     (df["Airline"].isin(selected_airline)) &
     (df["Seat_Class"].isin(selected_seat)) &
     (df["Flight_Status"].isin(selected_status))
-]
+].copy()
 
 # KPI Section
 total_passengers = filtered_df["Passenger_ID"].nunique()
